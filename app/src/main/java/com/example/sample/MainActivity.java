@@ -36,27 +36,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-//        tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.group));
-//        tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.suitcase));
-//        tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.vendor));
-//
-//        viewPager.setAdapter(new FragmentPagerAdapter(getSupportFragmentManager(),FragmentPagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT) {
-//            @NonNull
-//            @Override
-//            public Fragment getItem(int position) {
-//                switch (position){
-//                    case 0:
-//                        break;
-//                    case 1:
-//                        break;
-//                }
-//                return null;
-//            }
-//
-//            @Override
-//            public int getCount() {
-//                return 0;
-//            }
-//        });
+        tabLayout.setupWithViewPager(viewPager);
+
+        VPAdapter vp = new VPAdapter(getSupportFragmentManager(),FragmentPagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
+
+        vp.addFragment(new Frag1());
+        vp.addFragment(new Frag2());
+        vp.addFragment(new Frag3());
+
+        viewPager.setAdapter(vp);
+        tabLayout.getTabAt(0).setIcon(R.drawable.group);
+        tabLayout.getTabAt(1).setIcon(R.drawable.suitcase);
+        tabLayout.getTabAt(2).setIcon(R.drawable.vendor);
     }
 }
