@@ -10,5 +10,8 @@
     <string name="refineDistance">Select Hyper Local Distance</string>
     <string name="refinePurpose">Select Purpose</string>
     <string name="refineSave">Save &amp; Explore</string>
+    <string name="index0">Available | Hey Let Us Connect</string>
+    <string name="StatusText">Hi community! I am open to new connections "😊"</string>
+    <string name="coffee">Coffee</string>
 
 </resources>
