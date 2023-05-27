@@ -8,4 +8,5 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="TitleBar">#4585F2</color>
+    <color name="Tabs">#6495EC</color>
 </resources>

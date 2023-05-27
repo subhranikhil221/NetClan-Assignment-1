@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/editProfile"
+            android:icon="@drawable/person"
+            android:title="Edit Profile" />
+
+        <item
+            android:id="@+id/myNetwork"
+            android:icon="@drawable/group2"
+            android:title="My Network" />
+
+        <item
+            android:id="@+id/ST_pro"
+            android:icon="@drawable/suitcase2"
+            android:title="Switch to Professional" />
+
+        <item
+            android:id="@+id/ST_merchant"
+            android:icon="@drawable/vendor2"
+            android:title="Switch to Merchant" />
+
+        <item
+            android:id="@+id/dating"
+            android:icon="@drawable/person"
+            android:title="Dating" />
+
+        <item
+            android:id="@+id/matrimony"
+            android:icon="@drawable/person"
+            android:title="Matrimony" />
+
+        <item
+            android:id="@+id/buy_sell"
+            android:icon="@drawable/person"
+            android:title="Buy and Sell" />
+
+        <item
+            android:id="@+id/rent"
+            android:icon="@drawable/person"
+            android:title="rent" />
+
+        <item
+            android:id="@+id/jobs"
+            android:icon="@drawable/person"
+            android:title="Jobs" />
+
+        <item
+            android:id="@+id/business"
+            android:icon="@drawable/person"
+            android:title="Business Cards" />
+
+        <item
+            android:id="@+id/hashtags"
+            android:icon="@drawable/person"
+            android:title="Hashtags" />
+
+        <item
+            android:id="@+id/notes"
+            android:icon="@drawable/person"
+            android:title="Notes" />
+
+        <item
+            android:id="@+id/location"
+            android:icon="@drawable/person"
+            android:title="Live Location" />
+
+    </group>
+</menu>
