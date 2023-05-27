@@ -10,12 +10,12 @@
 
         <item
             android:id="@+id/myNetwork"
-            android:icon="@drawable/group2"
+            android:icon="@drawable/group"
             android:title="My Network" />
 
         <item
             android:id="@+id/ST_pro"
-            android:icon="@drawable/suitcase2"
+            android:icon="@drawable/suitcase"
             android:title="Switch to Professional" />
 
         <item
@@ -25,47 +25,42 @@
 
         <item
             android:id="@+id/dating"
-            android:icon="@drawable/person"
+            android:icon="@drawable/like"
             android:title="Dating" />
 
         <item
             android:id="@+id/matrimony"
-            android:icon="@drawable/person"
+            android:icon="@drawable/wedding_rings"
             android:title="Matrimony" />
 
         <item
             android:id="@+id/buy_sell"
-            android:icon="@drawable/person"
+            android:icon="@drawable/trading"
             android:title="Buy and Sell" />
 
         <item
-            android:id="@+id/rent"
-            android:icon="@drawable/person"
-            android:title="rent" />
-
-        <item
             android:id="@+id/jobs"
-            android:icon="@drawable/person"
+            android:icon="@drawable/portfolio"
             android:title="Jobs" />
 
         <item
             android:id="@+id/business"
-            android:icon="@drawable/person"
+            android:icon="@drawable/business_cards"
             android:title="Business Cards" />
 
         <item
             android:id="@+id/hashtags"
-            android:icon="@drawable/person"
+            android:icon="@drawable/hashtag"
             android:title="Hashtags" />
 
         <item
             android:id="@+id/notes"
-            android:icon="@drawable/person"
+            android:icon="@drawable/notes"
             android:title="Notes" />
 
         <item
             android:id="@+id/location"
-            android:icon="@drawable/person"
+            android:icon="@drawable/pin"
             android:title="Live Location" />
 
     </group>

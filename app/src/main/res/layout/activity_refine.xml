@@ -68,16 +68,15 @@
 
     <EditText
         android:id="@+id/editText3"
-        android:layout_width="374dp"
-        android:layout_height="82dp"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
         android:layout_margin="10dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
         android:layout_marginBottom="27dp"
         android:gravity="top"
         android:text="@string/StatusText"
         app:layout_constraintBottom_toTopOf="@+id/textDistance"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textStatus" />
 
@@ -152,87 +151,103 @@
         android:id="@+id/btnCoffee"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="15dp"
         android:background="@drawable/rounded_toggle_on"
         android:text="Toggle"
         android:textColor="#FFFFFF"
         android:textOff="Coffee"
         android:textOn="Coffee"
         android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnFriendship"
+        app:layout_constraintEnd_toStartOf="@+id/btnBusiness"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.5" />
 
     <ToggleButton
         android:id="@+id/btnBusiness"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="12dp"
         android:background="@drawable/rounded_toggle_on"
         android:text="Toggle"
         android:textColor="#FFFFFF"
         android:textOff="Business"
         android:textOn="Business"
         android:textSize="12sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/btnCoffee"
-        app:layout_constraintEnd_toStartOf="@+id/btnHobbies" />
+        app:layout_constraintBottom_toTopOf="@+id/btnMovies"
+        app:layout_constraintEnd_toStartOf="@+id/btnHobbies"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnCoffee"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.5" />
 
     <ToggleButton
         android:id="@+id/btnHobbies"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="87dp"
         android:background="@drawable/rounded_toggle_on"
         android:text="Toggle"
         android:textColor="#FFFFFF"
         android:textOff="Hobbies"
         android:textOn="Hobbies"
         android:textSize="12sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/btnBusiness"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/btnDinning"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnBusiness"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.5" />
 
     <ToggleButton
         android:id="@+id/btnFriendship"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
         android:background="@drawable/rounded_toggle_on"
         android:text="Toggle"
         android:textColor="#FFFFFF"
         android:textOff="Friendship"
         android:textOn="Friendship"
         android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnDating"
+        app:layout_constraintEnd_toStartOf="@+id/btnMovies"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnCoffee" />
+        app:layout_constraintTop_toBottomOf="@+id/btnCoffee"
+        app:layout_constraintVertical_bias="0.5" />
 
     <ToggleButton
         android:id="@+id/btnMovies"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
         android:background="@drawable/rounded_toggle_on"
         android:text="Toggle"
         android:textColor="#FFFFFF"
         android:textOff="Movies"
         android:textOn="Movies"
         android:textSize="12sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/btnFriendship"
-        app:layout_constraintStart_toEndOf="@+id/btnFriendship" />
+        app:layout_constraintBottom_toTopOf="@+id/btnMatrimony"
+        app:layout_constraintEnd_toStartOf="@+id/btnDinning"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnFriendship"
+        app:layout_constraintTop_toBottomOf="@+id/btnCoffee"
+        app:layout_constraintVertical_bias="0.5" />
 
     <ToggleButton
         android:id="@+id/btnDinning"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="13dp"
         android:background="@drawable/rounded_toggle_on"
         android:text="Toggle"
         android:textColor="#FFFFFF"
         android:textOff="Dinning"
         android:textOn="Dinning"
         android:textSize="12sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/btnMovies"
-        app:layout_constraintStart_toEndOf="@+id/btnMovies" />
+        app:layout_constraintBottom_toTopOf="@+id/btnMatrimony"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnMovies"
+        app:layout_constraintTop_toBottomOf="@+id/btnHobbies"
+        app:layout_constraintVertical_bias="0.5" />
 
 
     <ToggleButton
@@ -245,9 +260,12 @@
         android:textOff="Dating"
         android:textOn="Dating"
         android:textSize="12sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/btnMatrimony"
+        app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toStartOf="@+id/btnMatrimony"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnFriendship"
+        app:layout_constraintVertical_bias="0.5" />
 
     <ToggleButton
         android:id="@+id/btnMatrimony"
@@ -260,7 +278,9 @@
         android:textOn="Matrimony"
         android:textSize="12sp"
         app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintStart_toStartOf="@+id/btnMovies"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnDating"
         app:layout_constraintTop_toBottomOf="@+id/btnMovies"
         app:layout_constraintVertical_bias="0.5" />
 
