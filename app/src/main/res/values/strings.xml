@@ -1,7 +1,14 @@
 <resources>
-    <string name="app_name">Sample</string>
+    <string name="app_name">NetClan</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Welcome to NetClan</string>
+    <string name="fragment1">Welcome to NetClan Individual</string>
+    <string name="fragment1_personal">Welcome to NetClan Personal</string>
+    <string name="fragment1_professional">Welcome to NetClan Professional</string>
+    <string name="fragment1_merchant">Welcome to NetClan Merchant</string>
+    <string name="fragment2">Welcome to NetClan Network</string>
+    <string name="fragment3">Welcome to NetClan Chat</string>
+    <string name="fragment4">Welcome to NetClan Contact</string>
+    <string name="fragment5">Welcome to NetClan Hashtags</string>
     <string name="refine">Refine</string>
     <string name="navigation_open">Open Navigation Drawer</string>
     <string name="navigation_close">Close Navigation Drawer</string>
@@ -13,5 +20,7 @@
     <string name="index0">Available | Hey Let Us Connect</string>
     <string name="StatusText">Hi community! I am open to new connections "😊"</string>
     <string name="coffee">Coffee</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

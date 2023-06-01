@@ -14,71 +14,54 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-<!--        <ScrollView-->
-<!--            android:id="@+id/scrollView"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="match_parent">-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-            <androidx.constraintlayout.widget.ConstraintLayout
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:background="@color/TitleBar"
 
-                <androidx.appcompat.widget.Toolbar
-                    android:id="@+id/toolbar"
-                    android:layout_width="match_parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:title="Howdy!"
+                app:titleMarginStart="30dp"
+                app:titleTextColor="@color/white"
+                tools:ignore="MissingConstraints">
+
+                <ImageView
+                    android:id="@+id/refine"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@color/TitleBar"
+                    android:layout_gravity="end"
+                    android:contentDescription="@string/refine"
+                    android:src="@drawable/refine" />
 
-                    app:layout_constraintBottom_toTopOf="@+id/tabLayout"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.5"
-                    app:title="Howdy!"
-                    app:titleMarginStart="30dp"
-                    app:titleTextColor="@color/white"
-                    tools:ignore="MissingConstraints">
+            </androidx.appcompat.widget.Toolbar>
 
-                    <ImageView
-                        android:id="@+id/refine"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="end"
-                        android:contentDescription="@string/refine"
-                        android:src="@drawable/refine" />
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toTopOf="@+id/tabLayoutBottom"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar"
+                tools:layout_editor_absoluteX="0dp" />
 
-                </androidx.appcompat.widget.Toolbar>
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabLayoutBottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#6496ED"
+                android:contentDescription="@string/app_name"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:layout_editor_absoluteX="16dp" />
 
-                <com.google.android.material.tabs.TabLayout
-                    android:id="@+id/tabLayout"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="#6496ED"
-                    android:contentDescription="@string/app_name"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/toolbar"
-                    app:layout_constraintVertical_bias="0.5">
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
-                </com.google.android.material.tabs.TabLayout>
-
-                <androidx.viewpager.widget.ViewPager
-                    android:id="@+id/viewPager"
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/tabLayout"
-                    app:layout_constraintVertical_bias="0.5" />
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-<!--        </ScrollView>-->
     </FrameLayout>
 
     <com.google.android.material.navigation.NavigationView

@@ -4,19 +4,24 @@ import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.TypedValue;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.tabs.TabLayout;
 
 public class MainActivity extends AppCompatActivity {
     ImageView refine;
-    TabLayout tabLayout;
+
+    TabLayout tabLayoutBottom;
     ViewPager viewPager;
     DrawerLayout drawerLayout;
     NavigationView navigationView;
@@ -28,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         refine = findViewById(R.id.refine);
-        tabLayout = findViewById(R.id.tabLayout);
+        tabLayoutBottom = findViewById(R.id.tabLayoutBottom);
         viewPager = findViewById(R.id.viewPager);
         drawerLayout = findViewById(R.id.drawerLayout);
         navigationView = findViewById(R.id.navigationView);
@@ -47,17 +52,61 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        tabLayout.setupWithViewPager(viewPager);
+        viewPager.setAdapter(new SectionsPagerAdapter(getSupportFragmentManager()));
+        tabLayoutBottom.setupWithViewPager(viewPager);
 
-        VPAdapter vp = new VPAdapter(getSupportFragmentManager(),FragmentPagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
+        tabLayoutBottom.getTabAt(0).setIcon(R.drawable.eye);
+        tabLayoutBottom.getTabAt(1).setIcon(R.drawable.connection);
+        tabLayoutBottom.getTabAt(2).setIcon(R.drawable.chat);
+        tabLayoutBottom.getTabAt(3).setIcon(R.drawable.contact_book);
+        tabLayoutBottom.getTabAt(4).setIcon(R.drawable.hashtag);
+    }
 
-        vp.addFragment(new Frag1());
-        vp.addFragment(new Frag2());
-        vp.addFragment(new Frag3());
+    private static class SectionsPagerAdapter extends FragmentPagerAdapter {
 
-        viewPager.setAdapter(vp);
-        tabLayout.getTabAt(0).setIcon(R.drawable.group);
-        tabLayout.getTabAt(1).setIcon(R.drawable.suitcase);
-        tabLayout.getTabAt(2).setIcon(R.drawable.vendor);
+        public SectionsPagerAdapter(FragmentManager fm) {
+            super(fm);
+        }
+
+        @Override
+        public Fragment getItem(int position) {
+            switch (position) {
+                case 0:
+                    return new Frag1();
+                case 1:
+                    return new Frag2();
+                case 2:
+                    return new Frag3();
+                case 3:
+                    return new Frag4();
+                case 4:
+                    return new Frag5();
+                default:
+                    return null;
+            }
+        }
+
+        @Override
+        public int getCount() {
+            return 5;
+        }
+
+        @Override
+        public CharSequence getPageTitle(int position) {
+            switch (position) {
+                case 0:
+                    return "Explore";
+                case 1:
+                    return "Network";
+                case 2:
+                    return "Chat";
+                case 3:
+                    return "Contact";
+                case 4:
+                    return "Hashtags";
+                default:
+                    return null;
+            }
+        }
     }
 }
