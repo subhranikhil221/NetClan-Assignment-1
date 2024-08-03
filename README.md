@@ -1,10 +1,19 @@
-# NetClan-Assignment
-BlackCoffer Company Assignment
+Source Codes
+The source codes for the implemented screens can be found in the following GitHub repository: [GitHub Repository Link]
 
-## Multiscreen App
-Along with multiscreen, fragments are used to add the functionanlity of the sliding screen.
+Installation Instructions
+To install and run the provided APK, please follow these steps:
 
-## Screenshots
-![SS1](https://github.com/Harsh5488/NetClan-Assignment/assets/95761669/8d75c56c-3b32-4e66-908b-c8b9a7dd4f35)
-</br>
-![SS2](https://github.com/Harsh5488/NetClan-Assignment/assets/95761669/77e4013e-2881-4c41-90af-7874cd94a9aa)
+Download the APK:
+[APK Download Link]
+Enable Installation from Unknown Sources:
+Go to Settings > Security > Unknown Sources
+Enable the option to allow installations from unknown sources
+Install the APK:
+Locate the downloaded APK file and tap on it to begin the installation process
+Follow the on-screen instructions to complete the installation
+Ideas to Improve It Further
+Enhanced Performance: Implement lazy loading for images and data to reduce initial load time.
+Better User Experience: Add animations and transitions between screens for a smoother navigation experience.
+Advanced Features: Integrate user preferences and save state functionalities to enhance user engagement.
+Error Handling: Implement comprehensive error handling and user feedback mechanisms for a more robust app.
